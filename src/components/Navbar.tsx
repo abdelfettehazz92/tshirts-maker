@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Bell, User, Settings, LogOut, ShoppingBag, Palette, Home, Template, Image, DollarSign, MessageCircle } from 'lucide-react';
+import { Bell, User, Settings, LogOut, ShoppingBag, Palette, Home, LayoutTemplate, Image, DollarSign, MessageCircle } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const location = useLocation();
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
   const navItems = [
     { path: '/', label: 'Home', icon: Home },
     { path: '/design-studio', label: 'Design Studio', icon: Palette },
-    { path: '/templates', label: 'Templates', icon: Template },
+    { path: '/templates', label: 'Templates', icon: LayoutTemplate },
     { path: '/gallery', label: 'Gallery', icon: Image },
     { path: '/pricing', label: 'Pricing', icon: DollarSign },
     { path: '/contact', label: 'Contact', icon: MessageCircle },
@@ -257,4 +257,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;
