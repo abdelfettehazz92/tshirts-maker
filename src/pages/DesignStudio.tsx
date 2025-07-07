@@ -7,7 +7,7 @@ import {
   FaUser, FaShoppingBag, FaPaintBrush, FaCog, FaSignOutAlt,
   FaChevronDown, FaBold, FaItalic, FaUnderline, FaAlignLeft,
   FaAlignCenter, FaAlignRight, FaPlus, FaRobot, FaExpand,
-  FaCompress, FaRotateLeft, FaRotateRight, FaArrowsAlt
+  FaCompress, FaSync, FaArrowsAlt
 } from 'react-icons/fa';
 
 interface DesignState {
@@ -755,7 +755,7 @@ const DesignStudio: React.FC = () => {
                         onClick={() => updateImageControls({ rotation: imageControls.rotation - 15 })}
                         className="p-2 bg-gray-200 rounded-lg hover:bg-gray-300"
                       >
-                        <FaRotateLeft />
+                        <FaSync style={{ transform: 'scaleX(-1)' }} />
                       </button>
                       <input
                         type="range"
@@ -769,7 +769,7 @@ const DesignStudio: React.FC = () => {
                         onClick={() => updateImageControls({ rotation: imageControls.rotation + 15 })}
                         className="p-2 bg-gray-200 rounded-lg hover:bg-gray-300"
                       >
-                        <FaRotateRight />
+                        <FaSync />
                       </button>
                     </div>
                   </div>
@@ -877,4 +877,4 @@ const DesignStudio: React.FC = () => {
   );
 };
 
-export default DesignStudio; 
+export default DesignStudio;
